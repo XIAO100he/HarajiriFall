@@ -1,0 +1,19 @@
+{
+  "name": "HarajiriFall",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/XIAO100he/HarajiriFall.git",
+  "author": "XIAO100he <xiao100he@gmil.com>",
+  "license": "MIT",
+	"scripts": {
+		"build-css":"node-sass --include-path scss scss/style.scss css/style.css",
+		"watch-css":"nodemon -e scss -x \"npm run build-css\""
+	},
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.19.4",
+    "popper.js": "^1.16.0"
+  }
+}
