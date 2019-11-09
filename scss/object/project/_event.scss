@@ -1,0 +1,72 @@
+.p-event{
+	width:100%;
+	height:600px;
+	margin-top: $space-xs;
+	background-color: $sub-green;
+	&__body{
+		width:70%;
+		height:500px;
+		margin:0 auto;
+	}
+	&__box{
+		width:400px;
+		height:450px;
+		float:left;
+		margin:$space-m $space-m 0 $space-m;
+		background-color: $base-ground;
+		border-radius: 5px;
+		position: relative;
+	}
+	&__circle{
+		background: $point-orange;
+		color: $base-ground;
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		border-radius: 60px;
+		width: 90px;
+		height: 90px;
+		text-align: center;
+		line-height: 4.5em;
+		padding: 15px 0;
+		font-size: 12px;
+		box-sizing: border-box;
+	}
+	&__date{
+		width:80%;
+		margin-top:$space-m;
+		margin-left:$space-m;
+	}
+	&__title{
+		width:80%;
+		margin:0 auto;
+		margin-top:30px;
+		font-size: 22px;
+		text-align: center;
+	}
+	&__panel{
+		width: 100%;
+		height:300px;
+		margin-top:40px;
+	}
+	&__more{
+		width:62%;
+		margin:0 auto;
+		margin-top:$space-s;
+		text-align: right;
+	}
+}
+
+
+//画像URL
+.panel-left{
+	background-image: url(../images/matsuri.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.panel-right{
+	background-image: url(../images/himatsuri.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
