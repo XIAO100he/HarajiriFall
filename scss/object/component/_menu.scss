@@ -1,0 +1,22 @@
+@import "./foundation/_color";
+@import "./foundation/_space";
+
+.c-menu{
+	width:65%;
+	height:50px;
+	padding-top:$space-m;
+	margin:0 auto;
+	&__all{
+		width:100%;
+	}
+	&__title{
+		float: left;
+		width:calc(14% - #{$space-s});
+		margin-right:$space-s;
+		text-align: center;
+	}
+	&__link:hover{
+		border-bottom: 2px solid $point-orange;
+		transform: 0.2s;
+	}
+}
