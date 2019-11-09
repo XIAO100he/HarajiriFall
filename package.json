@@ -6,7 +6,7 @@
   "author": "XIAO100he <xiao100he@gmil.com>",
   "license": "MIT",
 	"scripts": {
-		"build-css":"node-sass --include-path scss scss/style.scss css/style.css",
+		"build-css":"node-sass --include-path scss scss/app.scss css/app.css",
 		"watch-css":"nodemon -e scss -x \"npm run build-css\""
 	},
   "dependencies": {
