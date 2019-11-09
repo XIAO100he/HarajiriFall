@@ -1,0 +1,452 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  min-width: 1024px;
+  font-family: 'Noto Sans JP', 'Noto Sans CJK JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  font-size: 15px;
+  letter-spacing: .05em;
+  background-color: #fff;
+  color: #1f1f1f; }
+
+a {
+  text-decoration: none;
+  color: #1f1f1f; }
+
+#header {
+  width: 100%; }
+
+#footer {
+  width: 100%;
+  height: 80px;
+  background-color: #2A4139;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.c-menu {
+  width: 65%;
+  height: 50px;
+  padding-top: 50px;
+  margin: 0 auto; }
+  .c-menu__all {
+    width: 100%; }
+  .c-menu__title {
+    float: left;
+    width: calc(14% - 20px);
+    margin-right: 20px;
+    text-align: center; }
+  .c-menu__link:hover {
+    border-bottom: 2px solid #E76B2D;
+    transform: 0.2s; }
+
+.c-content {
+  width: 100%;
+  height: 50px;
+  margin-top: 100px; }
+  .c-content__title {
+    font-size: 55px;
+    font-weight: 600;
+    color: #EBF0EE;
+    text-align: center; }
+
+.c-content__title span {
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1; }
+
+.c-content__title::before, .c-content__title::after {
+  border-top: 3px solid #EBF0EE;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 0; }
+
+.c-content__title::before {
+  top: 23px; }
+
+.c-content__title::after {
+  top: -23px; }
+
+.c-wrapper {
+  width: 100%;
+  height: 700px;
+  margin-top: 10px;
+  background-color: #EBF0EE; }
+
+.c-imagebox {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+  .c-imagebox__main-left {
+    position: absolute;
+    top: 20px;
+    left: 0; }
+  .c-imagebox__colwrap-right {
+    width: 1000px;
+    height: 280px;
+    position: absolute;
+    top: 400px;
+    right: 30px; }
+  .c-imagebox__colbody {
+    width: 55%; }
+  .c-imagebox__jenre {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center; }
+  .c-imagebox__store {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center; }
+  .c-imagebox__text {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 1.5; }
+  .c-imagebox__sub-right {
+    position: absolute;
+    bottom: 70px;
+    right: 0; }
+
+.c-imagebox {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+  .c-imagebox__main-right {
+    position: absolute;
+    top: 20px;
+    right: 0; }
+  .c-imagebox__colwrap-left {
+    width: 1000px;
+    height: 280px;
+    position: absolute;
+    top: 400px;
+    left: 30px; }
+  .c-imagebox__colbody {
+    width: 55%; }
+  .c-imagebox__jenre {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center; }
+  .c-imagebox__store {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center; }
+  .c-imagebox__text {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    line-height: 1.5; }
+  .c-imagebox__sub-left {
+    position: absolute;
+    bottom: 70px;
+    left: 0; }
+
+.image-main {
+  width: 800px;
+  height: 500px; }
+
+.image-sub {
+  width: 500px;
+  height: 350px; }
+
+.souvenir-image {
+  background-image: url(../images/michinoeki.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.souvenir-image__sub {
+  background-image: url(../images/souvenir.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.restaurants-image {
+  background-image: url(../images/restraunt.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.restaurants-image__sub {
+  background-image: url(../images/menu.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.product-image {
+  background-image: url(../images/nousanbutu.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.product-image__sub {
+  background-image: url(../images/come.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.jenre-white {
+  color: #fff; }
+
+.colwrap-orange {
+  background-color: rgba(231, 107, 45, 0.6); }
+
+.colwrap-white {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.colbody-right {
+  margin-left: 480px; }
+
+.p-hero {
+  background-image: url(../images/harajiri.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 730px;
+  display: flex;
+  position: relative; }
+
+.p-hero::before {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' '; }
+
+.p-titlebox {
+  position: absolute;
+  top: 450px;
+  left: 0; }
+  .p-titlebox__left {
+    width: 140px;
+    height: 140px;
+    float: left;
+    background-color: #2A4139;
+    position: relative; }
+  .p-titlebox__sub {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: #fff;
+    font-size: 20px; }
+  .p-titlebox__white {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    color: #fff;
+    font-size: 50px; }
+  .p-titlebox__right {
+    width: 210px;
+    height: 140px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: relative; }
+  .p-titlebox__green {
+    position: absolute;
+    bottom: 15px;
+    color: #1f2f2a;
+    font-size: 50px; }
+
+.p-scroll {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50%; }
+  .p-scroll__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(227, 123, 137, 0.4), 0 0 50px rgba(0, 0, 0, 0.8); }
+
+.p-news {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #EBF0EE; }
+  .p-news__body {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .p-news__box {
+    width: 50%;
+    height: 150px;
+    margin: 0 auto;
+    padding: 15px 15px;
+    border: 1px solid #979797;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow-y: scroll; }
+  .p-news__item {
+    margin-bottom: 20px; }
+  .p-news__date {
+    margin-right: 20px; }
+
+.p-event {
+  width: 100%;
+  height: 600px;
+  margin-top: 10px;
+  background-color: #EBF0EE; }
+  .p-event__body {
+    width: 70%;
+    height: 500px;
+    margin: 0 auto; }
+  .p-event__box {
+    width: 400px;
+    height: 450px;
+    float: left;
+    margin: 50px 50px 0 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative; }
+  .p-event__circle {
+    background: #E76B2D;
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border-radius: 60px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 4.5em;
+    padding: 15px 0;
+    font-size: 12px;
+    box-sizing: border-box; }
+  .p-event__date {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 50px; }
+  .p-event__title {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 22px;
+    text-align: center; }
+  .p-event__panel {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px; }
+  .p-event__more {
+    width: 62%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: right; }
+
+.panel-left {
+  background-image: url(../images/matsuri.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.panel-right {
+  background-image: url(../images/himatsuri.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.p-access {
+  width: 100%;
+  height: 600px;
+  margin-top: 10px;
+  background-color: #EBF0EE; }
+  .p-access__map {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 10px; }
+  .p-access__company {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 20px; }
+  .p-access__address {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 20px; }
+
+.p-contact {
+  width: 100%;
+  height: 600px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  background-color: #EBF0EE; }
+  .p-contact__body {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto; }
+  .p-contact__form {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 80px; }
+  .p-contact__input {
+    display: block;
+    margin-bottom: 15px;
+    border: 3px solid #EBF0EE;
+    border-radius: 5px;
+    outline: none;
+    height: 60px;
+    font-size: 18px;
+    color: #979797;
+    box-sizing: border-box; }
+
+.input-box {
+  padding: 5px 10px;
+  width: 100%; }
+
+.input-textarea {
+  height: 200px; }
+
+.input-bottom {
+  margin-bottom: 30px; }
+
+.btn__send {
+  padding: 15px 30px;
+  width: 100%;
+  font-size: 18px;
+  background-color: rgba(231, 107, 45, 0.8);
+  color: #fff;
+  border-radius: 5px; }
