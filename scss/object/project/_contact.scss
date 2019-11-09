@@ -1,0 +1,54 @@
+.p-contact{
+	width:100%;
+	height:600px;
+	margin-top: $space-xs;
+	margin-bottom:$space-l;
+	background-color: $sub-green;
+	&__body{
+		width:80%;
+		height:100%;
+		margin:0 auto;
+	}
+	&__form{
+		width:70%;
+		margin:0 auto;
+		padding-top:80px;
+	}
+	&__input{
+		display: block;
+		margin-bottom: 15px;
+		border: 3px solid $sub-green;
+		border-radius: 5px;
+		outline: none;
+		height: 60px;
+		font-size: 18px;
+		color: $sub-grey;
+		box-sizing: border-box;
+	}
+}
+
+//フォームボックス
+.input-box{
+	padding: 5px 10px;
+	width: 100%;
+}
+
+//テキストエリア
+.input-textarea{
+	height:200px;
+}
+
+//ボタンとの間の距離
+.input-bottom{
+	margin-bottom:30px;
+}
+
+//送信ボタン
+.btn__send{
+	padding: 15px 30px;
+	width: 100%;
+	font-size: 18px;
+	background-color: rgba(231, 107, 45, 0.8);
+	color:$base-ground;
+	border-radius: 5px;
+}
