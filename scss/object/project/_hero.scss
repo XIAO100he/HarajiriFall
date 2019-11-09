@@ -1,0 +1,75 @@
+.p-hero{
+	background-image: url(../images/harajiri.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 730px;
+	display: flex;
+	position: relative;
+}
+.p-hero::before{
+	background-color: rgba(0,0,0,0.1);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+.p-titlebox{
+	position: absolute;
+	top:450px;
+	left:0;
+	&__left{
+		width:140px;
+		height:140px;
+		float: left;
+		background-color: $point-green;
+		position: relative;
+	}
+	&__sub{
+		position: absolute;
+		top:50px;
+		left:20px;
+		color:$base-ground;
+		font-size: 20px;
+	}
+	&__white{
+		position: absolute;
+		bottom:15px;
+		left:30px;
+		color:$base-ground;
+		font-size: 50px;
+	}
+	&__right{
+		width:210px;
+		height:140px;
+		float: left;
+		background-color: rgba(255,255,255,0.6);
+		position: relative;
+	}
+	&__green{
+		position: absolute;
+		bottom:15px;
+		color:#1f2f2a;
+		font-size: 50px;
+	}
+}
+.p-scroll{
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	&__text{
+		font-family: "Open Sans", sans-serif;
+		font-weight: 600;
+		font-size: 12px;
+		letter-spacing: 0.08em;
+		color: $base-ground;
+		text-shadow: 0 0 20px rgba(227, 123, 137, .4), 0 0 50px rgba(0, 0, 0, .8);
+	}
+	&__line{
+		
+	}
+}
