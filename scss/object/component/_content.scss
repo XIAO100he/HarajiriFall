@@ -1,0 +1,35 @@
+@import "./foundation/_color";
+@import "./foundation/_space";
+
+.c-content{
+	width:100%;
+	height:50px;
+	margin-top:$space-l;
+	&__title{
+		font-size: 55px;
+		font-weight: 600;
+		color: $sub-green;
+		text-align: center;
+	}
+}
+
+.c-content__title span{
+	display: inline-block;
+	background-color: $base-ground;
+	padding: 0 10px;
+	position: relative;
+	z-index: 1;
+}
+.c-content__title::before, .c-content__title::after{
+	border-top: 3px solid $sub-green;
+	content: "";
+	display: block;
+	position: relative;
+	z-index: 0;
+}
+.c-content__title::before{
+	top:23px;
+}
+.c-content__title::after{
+	top:-23px;
+}
