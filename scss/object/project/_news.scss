@@ -1,0 +1,26 @@
+.p-news{
+	width:100%;
+	margin-top: $space-xs;
+	background-color: $sub-green;
+	&__body{
+		width:100%;
+		padding-top: $space-l;
+		padding-bottom: $space-l;
+	}
+	&__box{
+		width:50%;
+		height:150px;
+		margin:0 auto;
+		padding:15px 15px;
+		border: 1px solid $sub-grey;
+		border-radius: 5px;
+		background-color: $base-ground;
+		overflow-y: scroll;
+	}
+	&__item{
+		margin-bottom:$space-s;
+	}
+	&__date{
+		margin-right:$space-s;
+	}
+}
