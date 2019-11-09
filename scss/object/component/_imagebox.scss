@@ -1,0 +1,166 @@
+//全体
+.c-wrapper{
+	width:100%;
+	height:700px;
+	margin-top: $space-xs;
+	background-color: $sub-green;
+}
+
+//オレンジカテゴリー
+.c-imagebox{
+	width:90%;
+	height:100%;
+	margin:0 auto;
+	position: relative;
+	&__main-left{
+		position: absolute;
+		top:20px;
+		left:0;
+	}
+	&__colwrap-right{
+		width:1000px;
+		height:280px;
+		position: absolute;
+		top:400px;
+		right:30px;
+	}
+	&__colbody{
+		width:55%;
+	}
+	&__jenre{
+		width:80%;
+		margin:0 auto;
+		margin-top:80px;
+		text-align: center;
+	}
+	&__store{
+		width:80%;
+		margin:0 auto;
+		margin-top:$space-xs;
+		font-size: 30px;
+		text-align: center;
+	}
+	&__text{
+		width:80%;
+		margin:0 auto;
+		margin-top:$space-s;
+		line-height: 1.5;
+	}
+	&__sub-right{
+		position: absolute;
+		bottom:70px;
+		right:0;
+	}
+}
+
+//ホワイトカテゴリー
+.c-imagebox{
+	width:90%;
+	height:100%;
+	margin:0 auto;
+	position: relative;
+	&__main-right{
+		position: absolute;
+		top:20px;
+		right:0;
+	}
+	&__colwrap-left{
+		width:1000px;
+		height:280px;
+		position: absolute;
+		top:400px;
+		left:30px;
+	}
+	&__colbody{
+		width:55%;
+	}
+	&__jenre{
+		width:80%;
+		margin:0 auto;
+		margin-top:80px;
+		text-align: center;
+	}
+	&__store{
+		width:80%;
+		margin:0 auto;
+		margin-top:$space-xs;
+		font-size: 30px;
+		text-align: center;
+	}
+	&__text{
+		width:80%;
+		margin:0 auto;
+		margin-top:$space-s;
+		line-height: 1.5;
+	}
+	&__sub-left{
+		position: absolute;
+		bottom:70px;
+		left:0;
+	}
+}
+
+
+//画像大きさ
+.image-main{
+	width:800px;
+	height:500px;
+}
+.image-sub{
+	width:500px;
+	height:350px;
+}
+
+//画像URL
+.souvenir-image{
+	background-image: url(../images/michinoeki.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.souvenir-image__sub{
+	background-image: url(../images/souvenir.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.restaurants-image{
+	background-image: url(../images/restraunt.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.restaurants-image__sub{
+	background-image: url(../images/menu.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.product-image{
+	background-image: url(../images/nousanbutu.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.product-image__sub{
+	background-image: url(../images/come.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+//文字色
+.jenre-white{
+	color: $base-ground;
+}
+
+//ボックスカラー
+.colwrap-orange{
+	background-color: rgba(231,107,45,0.6);
+}
+.colwrap-white{
+	background-color: rgba(255,255,255,0.7);
+}
+
+//配置
+.colbody-right{
+	margin-left:480px;
+}
