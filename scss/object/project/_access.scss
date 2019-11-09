@@ -1,6 +1,6 @@
 .p-access{
 	width:100%;
-	height:600px;
+	height:650px;
 	margin-top: $space-xs;
 	background-color: $sub-green;
 	&__map{
@@ -12,6 +12,7 @@
 	&__company{
 		width:80%;
 		margin:0 auto;
+		margin-top:$space-m;
 		line-height: 20px;
 	}
 	&__address{
@@ -21,4 +22,10 @@
 		font-size: 13px;
 		line-height: 20px;
 	}
+}
+
+//地図の大きさ
+iframe{
+	width:100%;
+	margin-top:$space-m;
 }

@@ -389,7 +389,7 @@ a {
 
 .p-access {
   width: 100%;
-  height: 600px;
+  height: 650px;
   margin-top: 10px;
   background-color: #EBF0EE; }
   .p-access__map {
@@ -400,6 +400,7 @@ a {
   .p-access__company {
     width: 80%;
     margin: 0 auto;
+    margin-top: 50px;
     line-height: 20px; }
   .p-access__address {
     width: 80%;
@@ -407,6 +408,10 @@ a {
     margin-top: 5px;
     font-size: 13px;
     line-height: 20px; }
+
+iframe {
+  width: 100%;
+  margin-top: 50px; }
 
 .p-contact {
   width: 100%;
