@@ -55,7 +55,7 @@ a:hover {
 #header {
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 200;
   background-color: #fff;
   align-items: center; }
 
@@ -69,16 +69,20 @@ a:hover {
   justify-content: center; }
 
 .c-menu {
-  width: 65%;
+  width: 80%;
   height: 50px;
   padding-top: 50px;
   margin: 0 auto; }
   .c-menu__all {
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between; }
   .c-menu__title {
     float: left;
-    width: calc(14% - 20px);
-    margin-right: 20px;
+    width: calc(12% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center; }
   .c-menu__link:hover {
     border-bottom: 2px solid #E76B2D; }
@@ -116,7 +120,7 @@ a:hover {
 
 .c-jump-space {
   width: 100%;
-  height: 120px; }
+  height: 110px; }
 
 .c-wrapper {
   width: 100%;
@@ -258,7 +262,8 @@ a:hover {
   background-repeat: no-repeat;
   height: 800px;
   display: flex;
-  position: relative; }
+  position: relative;
+  animation: heroImage 4s ease-in; }
 
 .p-hero::before {
   background-color: rgba(0, 0, 0, 0.1);
@@ -267,7 +272,24 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  content: ' '; }
+  content: ' ';
+  animation: heroBack 4s ease-in; }
+
+@keyframes heroImage {
+  0% {
+    background-color: white; }
+  50% {
+    background-color: rgba(255, 255, 255, 0.5); }
+  100% {
+    background-color: rgba(255, 255, 255, 0); } }
+
+@keyframes heroBack {
+  0% {
+    background-color: white; }
+  50% {
+    background-color: rgba(255, 255, 255, 0.5); }
+  100% {
+    background-color: rgba(0, 0, 0, 0.1); } }
 
 .p-titlebox {
   position: absolute;
@@ -278,35 +300,40 @@ a:hover {
     height: 140px;
     float: left;
     background-color: #2A4139;
-    position: relative; }
+    position: relative;
+    animation: all 2s ease-out; }
   .p-titlebox__sub {
     position: absolute;
     top: 50px;
     left: 20px;
     color: #fff;
-    font-size: 20px; }
+    font-size: 20px;
+    animation: all 2s ease-out; }
   .p-titlebox__white {
     position: absolute;
     bottom: 15px;
     left: 30px;
     color: #fff;
-    font-size: 50px; }
+    font-size: 50px;
+    animation: all 2s ease-out; }
   .p-titlebox__right {
     width: 210px;
     height: 140px;
     float: left;
     background-color: rgba(255, 255, 255, 0.6);
-    position: relative; }
+    position: relative;
+    animation: all 2s ease-out; }
   .p-titlebox__green {
     position: absolute;
     bottom: 15px;
     color: #1f2f2a;
-    font-size: 50px; }
+    font-size: 50px;
+    animation: all 2s ease-out; }
 
 .p-scroll {
   height: 50px;
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 50%; }
   .p-scroll__text {
     font-family: "Open Sans", sans-serif;
@@ -315,6 +342,36 @@ a:hover {
     letter-spacing: 0.08em;
     color: #fff;
     text-shadow: 0 0 20px rgba(227, 123, 137, 0.4), 0 0 50px rgba(0, 0, 0, 0.8); }
+  .p-scroll__line {
+    width: 3px;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-left: 30px;
+    animation: scrollHeight 1.5s infinite ease-out; }
+
+@keyframes scrollHeight {
+  0% {
+    height: 5px; }
+  10% {
+    height: 8px; }
+  20% {
+    height: 13px; }
+  30% {
+    height: 16px; }
+  40% {
+    height: 19px; }
+  50% {
+    height: 22px; }
+  60% {
+    height: 25px; }
+  70% {
+    height: 28px; }
+  80% {
+    height: 35px; }
+  90% {
+    height: 40px; }
+  100% {
+    height: 50px; } }
 
 .p-news {
   width: 100%;
@@ -355,6 +412,8 @@ a:hover {
     background-color: #fff;
     border-radius: 5px;
     position: relative; }
+  .p-event__box:hover {
+    cursor: pointer; }
   .p-event__circle {
     background: #E76B2D;
     color: #fff;
@@ -389,6 +448,9 @@ a:hover {
     margin-top: 20px;
     text-align: right; }
 
+.more-text:hover {
+  color: #979797; }
+
 .panel-left {
   background-image: url(../images/matsuri.jpeg);
   background-size: cover;
@@ -398,6 +460,85 @@ a:hover {
   background-image: url(../images/himatsuri.jpeg);
   background-size: cover;
   background-repeat: no-repeat; }
+
+.p-photo {
+  width: 100%;
+  height: 600px;
+  margin-top: 10px;
+  background-color: #EBF0EE; }
+  .p-photo__body {
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    padding-top: 20px; }
+  .p-photo__line {
+    width: 100%;
+    height: calc(50% - 20px);
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center; }
+  .p-photo__item {
+    width: calc(33% - 20px);
+    height: 100%;
+    margin-right: 20px;
+    float: left;
+    position: relative; }
+  .p-photo__item:hover {
+    cursor: pointer; }
+  .p-photo__image {
+    width: 100%;
+    height: 100%; }
+  .p-photo__text {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+    opacity: 0;
+    transition: all .3s; }
+  .p-photo__genre {
+    font-size: 12px;
+    position: absolute;
+    top: 50px;
+    left: 50px; }
+  .p-photo__name {
+    font-size: 20px; }
+  .p-photo__eng {
+    font-size: 14px;
+    position: absolute;
+    bottom: 80px; }
+  .p-photo__more {
+    width: 80%;
+    margin: 0 auto;
+    text-align: right; }
+
+.item-1-a {
+  background-image: url(../images/image-1-a.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.item-1-b {
+  background-image: url(../images/image-1-b.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.item-1-c {
+  background-image: url(../images/image-1-c.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.imagePickup {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2; }
 
 .p-access {
   width: 100%;
@@ -460,10 +601,18 @@ iframe {
 .input-bottom {
   margin-bottom: 30px; }
 
-.btn__send {
+.btn {
   padding: 15px 30px;
   width: 100%;
-  font-size: 18px;
   background-color: rgba(231, 107, 45, 0.8);
-  color: #fff;
-  border-radius: 5px; }
+  border-radius: 5px;
+  cursor: pointer; }
+  .btn__send {
+    font-size: 18px;
+    color: #fff; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  transition: .3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background-color: rgba(231, 107, 45, 0.7); }
