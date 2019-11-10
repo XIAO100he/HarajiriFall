@@ -18,8 +18,8 @@
 	&__address{
 		width:80%;
 		margin:0 auto;
-		margin-top:5px;
-		font-size: 13px;
+		margin-top:$space-xxs;
+		font-size: $font-m;
 		line-height: 20px;
 	}
 }

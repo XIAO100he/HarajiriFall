@@ -12,4 +12,9 @@ body{
 a{
 	text-decoration: none;
 	color:$base-text;
+	transform: 0.3s;
+}
+
+a:hover{
+	transform: 0.3s;
 }
