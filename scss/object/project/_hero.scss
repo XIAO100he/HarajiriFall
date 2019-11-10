@@ -7,6 +7,7 @@
 	height: 800px;
 	display: flex;
 	position: relative;
+	animation: heroImage 4s ease-in;
 }
 .p-hero::before{
 	background-color: rgba(0,0,0,0.1);
@@ -16,7 +17,23 @@
 	bottom: 0;
 	left: 0;
 	content: ' ';
+	animation: heroBack 4s ease-in;
 }
+
+//HEROアニメーション
+@keyframes heroImage{
+	0% { background-color: rgba(255,255,255,1); }
+	50% { background-color: rgba(255,255,255,.5); }
+	100% { background-color: rgba(255,255,255,0); }
+}
+@keyframes heroBack{
+	0% { background-color: rgba(255,255,255,1); }
+	50% { background-color: rgba(255,255,255,.5);}
+	100% { background-color:rgba(0,0,0,0.1); }
+}
+
+
+//タイトル
 .p-titlebox{
 	position: absolute;
 	top:450px;
@@ -27,6 +44,7 @@
 		float: left;
 		background-color: $point-green;
 		position: relative;
+		animation: all 2s ease-out;
 	}
 	&__sub{
 		position: absolute;
@@ -34,6 +52,7 @@
 		left:20px;
 		color:$base-ground;
 		font-size: 20px;
+		animation: all 2s ease-out;
 	}
 	&__white{
 		position: absolute;
@@ -41,6 +60,7 @@
 		left:30px;
 		color:$base-ground;
 		font-size: 50px;
+		animation: all 2s ease-out;
 	}
 	&__right{
 		width:210px;
@@ -48,18 +68,23 @@
 		float: left;
 		background-color: rgba(255,255,255,0.6);
 		position: relative;
+		animation: all 2s ease-out;
 	}
 	&__green{
 		position: absolute;
 		bottom:15px;
 		color:#1f2f2a;
 		font-size: 50px;
+		animation: all 2s ease-out;
 	}
 }
+
+
+//スクロール
 .p-scroll{
 	height: 50px;
 	position: absolute;
-	bottom: 0;
+	bottom: 30px;
 	left: 50%;
 	&__text{
 		font-family: "Open Sans", sans-serif;
@@ -70,6 +95,25 @@
 		text-shadow: 0 0 20px rgba(227, 123, 137, .4), 0 0 50px rgba(0, 0, 0, .8);
 	}
 	&__line{
-		
+		width:3px;
+		background-color: $base-ground;
+		margin-top: $space-xs;
+		margin-left: 30px;
+		animation: scrollHeight 1.5s infinite ease-out;
 	}
+}
+
+//scrollアニメーション
+@keyframes scrollHeight{
+	0%{ height:5px;}
+	10%{ height:8px;}
+	20%{ height:13px;}
+	30%{ height:16px;}
+	40%{ height:19px;}
+	50%{ height:22px;}
+	60%{ height:25px;}
+	70%{ height:28px;}
+	80%{ height:35px;}
+	90%{ height:40px;}
+	100%{ height:50px;}
 }

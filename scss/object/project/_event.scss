@@ -17,6 +17,9 @@
 		border-radius: 5px;
 		position: relative;
 	}
+	&__box:hover{
+		cursor: pointer;
+	}
 	&__circle{
 		background: $point-orange;
 		color: $base-ground;
@@ -56,6 +59,14 @@
 		text-align: right;
 	}
 }
+
+
+// MOREのhover時
+.more-text:hover{
+	color:$sub-grey;
+}
+
+
 
 
 //画像URL

@@ -44,11 +44,23 @@
 }
 
 //送信ボタン
-.btn__send{
+.btn{
 	padding: 15px 30px;
 	width: 100%;
-	font-size: 18px;
 	background-color: rgba(231, 107, 45, 0.8);
-	color:$base-ground;
 	border-radius: 5px;
+	cursor: pointer;
+	&__send{
+		font-size: 18px;
+		color:$base-ground;
+	}
 }
+
+//送信ボタン hover時
+.btn:hover{
+	transform: translateY(-3px);
+	transition: .3s;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	background-color: rgba(231, 107, 45, 0.7);
+}
+
